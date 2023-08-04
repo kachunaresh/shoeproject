@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shoe-Store</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="./js/index.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div id="audio" onclick="pauseAudio('play')">
+        <i class="fa-solid fa-volume-xmark fa-bounce" id="audioIcon"></i>
+    </div>
+
+    <div id="loadingPage">
+        <div id="loadingGlow">
+ 
+        </div>
+        <div id="loading">
+            <h1 id="loadingHeading">Loading...</h1>
+        </div>
+        <button id="enterToWebPage" onclick="playAudio()">Enter</button>
+        <div id="loadingBar">
+
+        </div>
+    </div>
+   
+    <header>
+        <video id="headerVid" src="./asset/video/headerVid.mp4" autoplay muted loop></video>
+        <div id="navbar">
+        <img id="webpageLogo" src="./asset/logos/logo.png">
+        <a href="#latestShoeSec"><h4>Latest Shoes</h4></a>
+        <a href="#categorySec"><h4>Catagory</h4></a>
+        <h4>Cart</h4>
+         <a href="./html/signup.html"> <h4 id="login">Login</h4></a>
+        </div>
+        <h1 id="pageName">Morningstar Sneakers</h1>
+        <div id="search">
+            <input id="searchID" type="text" name="" id="">
+            <i class="fa-solid fa-magnifying-glass fa-beat"></i>
+        </div>
+       <a href="#latestShoeSec"> <button class="goDown">V</button></a>
+    </header>
+
+
+    <section id="latestShoeSec">
+        <h1 id="latestShoeSecHeading">latest Shoe Section</h1>
+        <div class="shoeRot" id="LSshoe1">
+            <img class="LSshoe" src="./asset/images/shoe1.png">
+            <h1 class="LSName">Nike Jordon 1231</h1>
+            <p class="LSPara">Lorem ipsum dolor sit amet.</p>
+            <h2 class="money">Rs:10050/-</h2>
+        </div>
+        <div class="shoeRot" id="LSshoe2">
+            <img class="LSshoe" src="./asset/images/shoe2.png">
+            <h1 class="LSName">Nike Jordon 4301</h1>
+            <p class="LSPara">Lorem ipsum dolor sit amet.</p>
+            <h2 class="money">Rs:20000/-</h2>
+        </div>
+        <div class="shoeRot" id="LSshoe3">
+            <img class="LSshoe" src="./asset/images/shoe3.png">
+            <h1 class="LSName">Nike Jordon 7489</h1>
+            <p class="LSPara">Lorem ipsum dolor sit amet.</p>
+            <h2 class="money">Rs:20000/-</h2>
+        </div>
+        <a href="#categorySec"> <button class="goDown" id="buttonLS">V</button></a>
+
+    </section>
+    <section id="categorySec">
+        <h1 id="categorySection">category Section</h1>
+            <a href="https://www.nike.com/in/w/mens-shoes-nik1zy7ok"><div class="cataSec" id="Lifestyle">Lifestyle</div></a>
+            <a href="./html/catagory.html"><div class="cataSec" id="Jordan">Jordan</div></a>
+            <a href="https://www.nike.com/in/w/mens-shoes-nik1zy7ok"><div class="cataSec" id="Running">Running</div></a>
+            <a href="https://www.nike.com/in/w/mens-shoes-nik1zy7ok"><div class="cataSec" id="Basketball">Basketball</div></a>
+            <a href="https://www.nike.com/in/w/mens-shoes-nik1zy7ok"><div class="cataSec" id="Football">Football</div></a>
+            <a href="https://www.nike.com/in/w/mens-shoes-nik1zy7ok"><div class="cataSec" id="Traininggym">Training & Gym</div></a>
+            <a href="https://www.nike.com/in/w/mens-shoes-nik1zy7ok"><div class="cataSec" id="Skateboarding">Skateboarding</div></a>
+            <a href="https://www.nike.com/in/w/mens-shoes-nik1zy7ok"><div class="cataSec" id="Golf">Golf</div></a>
+            <a href="https://www.nike.com/in/w/mens-shoes-nik1zy7ok"><div class="cataSec" id="Tennis">Tennis</div></a>
+            <a href="https://www.nike.com/in/w/mens-shoes-nik1zy7ok"><div class="cataSec" id="Walking">Walking</div></a>
+                    <a href="#"> <button class="goDown" id="Up">V</button></a>
+    </section>
+    <footer>
+        <span id="copyrt">&copy; 2023 ,Morningstar Sneakers Inc. All Rights Reserved</span>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-snapchat"></i>
+    </footer>
+    
+</body>
+</html>
